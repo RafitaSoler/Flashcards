@@ -13,7 +13,9 @@ class Program
 
         DatabaseManager.SetConfiguration(config);
         DatabaseManager.Start();
+        DatabaseManager.Initialize();
 
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
         UIController.MainMenu();
     }
 }

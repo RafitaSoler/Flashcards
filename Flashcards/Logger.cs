@@ -4,7 +4,7 @@ namespace Flashcards
 {
     internal class Logger
     {
-        private static readonly string _path = $"log_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt";
+        private static readonly string _path = $"Logs\\log_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt";
 
         public static void Log(string message,
             [CallerFilePath] string filePath = "",
